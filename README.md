@@ -24,7 +24,7 @@ docker-compose up
 docker ps -a
 docker exec -it {CONTAINER_ID} bash
 ```
-5.Run Django migration:
+5. Run Django migration:
 ```
 python manage.py migrate
 ```
