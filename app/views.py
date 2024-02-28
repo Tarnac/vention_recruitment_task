@@ -15,9 +15,5 @@ class TaskViewSet(viewsets.ModelViewSet):
     serializer_class = TaskSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
-    def get_queryset(self):
-        if 'category' in self.request.GET:
-            return self.queryset.filter(category=self.request.GET['category'])
-        return self.queryset
 
 
