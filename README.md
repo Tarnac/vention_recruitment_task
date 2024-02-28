@@ -17,14 +17,14 @@ ALLOWED_HOSTS=*
 ```
 3. Build the Docker image:
 ```
-docker-compose up
+docker-compose up --build
 ```
 4. Connect to created container using CONTAINER_ID:
 ```
 docker ps -a
 docker exec -it {CONTAINER_ID} bash
 ```
-5.Run Django migration:
+5. Run Django migration:
 ```
 python manage.py migrate
 ```
