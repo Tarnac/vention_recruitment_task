@@ -17,7 +17,7 @@ ALLOWED_HOSTS=*
 ```
 3. Build the Docker image:
 ```
-docker-compose up
+docker-compose up --build
 ```
 4. Connect to created container using CONTAINER_ID:
 ```
